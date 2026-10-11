@@ -218,15 +218,19 @@ a:focus {
   align-items: center;
 
   img {
-    width: 70px;
+    height: 46px;
+    width: auto;
+    margin-right: 12px;
   }
 
-  // span {
-  //   text-transform: uppercase;
-  //   font-weight: bold;
-  //   color: #060606;
-  //   font-size: 24px;
-  // }
+  span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $white;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+  }
 }
 
 .custom_nav-container {
@@ -827,6 +831,12 @@ a:focus {
     margin: 0 auto 45px auto;
     padding-bottom: 10px;
     text-align: center;
+
+    img {
+      height: 64px;
+      width: auto;
+      margin-bottom: 12px;
+    }
 
     h2 {
       text-transform: uppercase;

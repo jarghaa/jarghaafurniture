@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" width="120" height="150" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Jarghaa Furniture</title>
+  <desc id="logoDesc">The letter J formed by an interlocking dovetail wood joint.</desc>
+  <defs>
+    <mask id="jMask" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="150">
+      <path d="M81 28 L81 92 Q81 122 57 122 Q39 122 39 104"
+            fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+  <g mask="url(#jMask)">
+    <rect x="0" y="0" width="120" height="150" fill="#0b7d54"/>
+    <path fill="#c9a24b" d="M-10 90 L73 90 L77 76 L85 76 L89 90 L140 90 L140 160 L-10 160 Z"/>
+  </g>
+</svg>

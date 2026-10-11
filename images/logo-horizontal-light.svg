@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 150" width="620" height="150" role="img" aria-labelledby="lgT lgD">
+  <title id="lgT">Jarghaa Furniture</title>
+  <desc id="lgD">Dovetail-joint J monogram with the Jarghaa wordmark.</desc>
+  <defs>
+    <mask id="jMaskH" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="150">
+      <path d="M81 28 L81 92 Q81 122 57 122 Q39 122 39 104" fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+  <g transform="translate(6,10) scale(0.85)">
+    <g mask="url(#jMaskH)">
+      <rect x="0" y="0" width="120" height="150" fill="#f2f7f4"/>
+      <path fill="#c9a24b" d="M-10 90 L73 90 L77 76 L85 76 L89 90 L140 90 L140 160 L-10 160 Z"/>
+    </g>
+  </g>
+  <text x="132" y="70" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="60" letter-spacing="1" fill="#ffffff">JARGHAA</text>
+  <text x="135" y="105" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="400" font-size="19" letter-spacing="4.5" fill="#c9a24b">Handmade Wood Furniture</text>
+</svg>

@@ -153,7 +153,17 @@ a:focus {
   align-items: center;
 }
 .navbar-brand img {
-  width: 70px;
+  height: 46px;
+  width: auto;
+  margin-right: 12px;
+}
+.navbar-brand span {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  line-height: 1;
 }
 
 .custom_nav-container {
@@ -675,6 +685,11 @@ a:focus {
   margin: 0 auto 45px auto;
   padding-bottom: 10px;
   text-align: center;
+}
+.info_section .info_logo img {
+  height: 64px;
+  width: auto;
+  margin-bottom: 12px;
 }
 .info_section .info_logo h2 {
   text-transform: uppercase;
