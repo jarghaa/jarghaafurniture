@@ -211,6 +211,66 @@
   <!-- end brand section -->
 
 
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="container ">
+      <div class="heading_container">
+        <h2 class="">
+          Contact Us
+        </h2>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong>Showroom</strong><br>Gyan Marg, Lalitpur, Bagmati Province 44700</p>
+          <p><strong>Phone</strong><br><a href="tel:9763603482">976-3603482</a><br><a href="tel:+9779851062357">+977 985-1062357</a></p>
+          <p><strong>Opening hours</strong><br>Sunday to Friday, 7 AM &ndash; 7 PM</p>
+          <p>Tell us what you need and we will build it to fit your space.</p>
+          <div class="d-flex flex-wrap">
+            <a href="tel:9763603482" class="brand-btn mr-3">Call now</a>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Jarghaa+Furniture+Gyan+Marg+Lalitpur" target="_blank" rel="noopener" class="brand-btn">Get directions</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container">
+            <div class="map-responsive">
+              <iframe title="Map showing Jarghaa Furniture showroom on Gyan Marg, Lalitpur"
+                src="https://www.google.com/maps?q=Jarghaa+Furniture+Gyan+Marg+Lalitpur&amp;output=embed"
+                width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
+                loading="lazy" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h3 class="enquiry_heading">Request a free quote</h3>
+          <form class="enquiry_form" id="enquiryForm" novalidate>
+            <div class="row">
+              <div class="col-md-6"><input type="text" id="eqName" name="name" placeholder="Your name" required></div>
+              <div class="col-md-6"><input type="tel" id="eqPhone" name="phone" placeholder="Phone / WhatsApp number" required></div>
+              <div class="col-md-6"><input type="text" id="eqItem" name="item" placeholder="What do you need? (bed, wardrobe, sofa...)"></div>
+              <div class="col-md-6"><input type="text" id="eqPlace" name="area" placeholder="Your area / location (optional)"></div>
+              <div class="col-12"><textarea id="eqMsg" name="details" placeholder="Any details - size, wood, budget, deadline..."></textarea></div>
+              <div class="col-12">
+                <button type="submit" class="brand-btn">Send on WhatsApp</button>
+                <p class="form-note">We will reply on WhatsApp, or call <a href="tel:9763603482">976-3603482</a>.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- end contact section -->
+
   <!-- info section -->
   <section class="info_section layout_padding2">
     <div class="container">
@@ -261,9 +321,14 @@
             <h5>
               Find us
             </h5>
-            <p>
-              <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Jarghaa+Furniture+Gyan+Marg+Lalitpur" target="_blank" rel="noopener" style="text-decoration:underline">Get directions on Google Maps</a>
-            </p>
+                        <div class="map_container">
+              <div class="map-responsive">
+                <iframe title="Map showing Jarghaa Furniture showroom on Gyan Marg, Lalitpur"
+                  src="https://www.google.com/maps?q=Jarghaa+Furniture+Gyan+Marg+Lalitpur&amp;output=embed"
+                  width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
+                  loading="lazy" allowfullscreen></iframe>
+              </div>
+            </div>
           </div>
         </div>
         <!-- Add your Facebook / Instagram links here when you have them -->
@@ -325,6 +390,27 @@
   <a class="whatsapp_float" href="https://wa.me/9779851062357?text=Hello%20Jarghaa%20Furniture%2C%20I%20would%20like%20a%20quote" target="_blank" rel="noopener" aria-label="Chat with Jarghaa Furniture on WhatsApp">
     <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-1.6c1.7.9 3.6 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.2-1.4l-.4-.2-4.9 1 1-4.8-.3-.4c-1-1.6-1.5-3.4-1.5-5.2C4.7 9.9 9.7 5 16 5s11.3 4.9 11.3 11-4.7 10.8-11.3 10.8z"/><path d="M22.4 18.6c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1c-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3s0-.5.1-.7l.5-.5c.2-.2.2-.3.3-.5s0-.4 0-.5-.7-1.7-.9-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5s-.2-.2-.5-.3z"/></svg>
   </a>
+
+  <script>
+    (function () {
+      var form = document.getElementById('enquiryForm');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = (document.getElementById('eqName').value || '').trim();
+        var phone = (document.getElementById('eqPhone').value || '').trim();
+        var item = (document.getElementById('eqItem').value || '').trim();
+        var area = (document.getElementById('eqPlace').value || '').trim();
+        var details = (document.getElementById('eqMsg').value || '').trim();
+        if (!name || !phone) { alert('Please add your name and phone number.'); return; }
+        var lines = ['Hello Jarghaa Furniture, I would like a quote.', 'Name: ' + name, 'Phone: ' + phone];
+        if (item) lines.push('Item: ' + item);
+        if (area) lines.push('Area: ' + area);
+        if (details) lines.push('Details: ' + details);
+        window.open('https://wa.me/9779851062357?text=' + encodeURIComponent(lines.join('\n')), '_blank');
+      });
+    })();
+  </script>
 
 </body>
 
