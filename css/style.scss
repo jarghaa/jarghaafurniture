@@ -1,6 +1,6 @@
 $white: #ffffff;
-$black: #252525;
-$primary1: #24d278;
+$black: #1a2340;
+$primary1: #c9a84c;
 
 
 @mixin main-font {
@@ -108,6 +108,7 @@ body {
     height: 100%;
     background-image: url(../images/hero-side-bg.png);
     background-size: cover;
+    background-color: rgba(26, 35, 64, 0.9);
   }
 }
 
@@ -126,6 +127,7 @@ body {
 
 .header_section {
   overflow-x: hidden;
+  background-color: rgba(26, 35, 64, 0.95);
 
   .container-fluid {
     padding-right: 25px;
@@ -159,7 +161,7 @@ body {
     .nav-item {
       .nav-link {
         padding: 10px 15px;
-        color: #060606;
+        color: $white;
         text-align: center;
         text-transform: uppercase;
       }
@@ -398,7 +400,7 @@ a:focus {
       top: 50%;
       left: 50%;
       background-color: $primary1;
-      opacity: 1;
+      opacity: 0.3;
       border-radius: 100%;
       transform: translate(-50%, -50%);
     }
@@ -411,12 +413,12 @@ a:focus {
     @keyframes before-animation {
       0% {
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
+        opacity: 0.3;
       }
 
       100% {
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-        opacity: 1;
+        opacity: 0;
       }
 
     }
@@ -505,7 +507,7 @@ a:focus {
 // trending section
 
 .trending_section {
-  background-color: #f4f5f7;
+  background-color: #f0f0f5;
 
   .tab_container {
     .t-link-box {
@@ -622,7 +624,7 @@ a:focus {
     .box {
       position: relative;
       text-align: center;
-      background-color: #e4e5e9;
+      background-color: #e8e6dd;
       padding: 75px 35px 10px 35px;
       margin: 30px 10px 0 10px;
       min-width: 225px;
@@ -923,11 +925,11 @@ a:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fdfeff;
+  background-color: #faf9f5;
 }
 
 .footer_section p {
-  color: #171717;
+  color: $black;
   margin: 0;
   padding: 25px 0 20px 0;
   margin: 0 auto;
@@ -936,7 +938,7 @@ a:focus {
 }
 
 .footer_section a {
-  color: #171717;
+  color: $black;
 }
 
 /* end footer section*/
@@ -967,7 +969,7 @@ a:focus {
   display: block;
   width: 34px;
   height: 3.5px;
-  background-color: #fff;
+  background-color: $white;
   margin: 8.5px 0;
   transition: all 0.3s;
 }
