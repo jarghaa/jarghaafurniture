@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jarghaa.github.io/jarghaafurniture/sitemap.xml
