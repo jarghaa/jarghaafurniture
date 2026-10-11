@@ -1,16 +1,35 @@
-Jarghaa Furniture: template pages
+Jarghaa Furniture - website
 
-These 5 files replace the HTML files of your downloaded template:
-index.html, about.html, shop.html, furniture.html, contact.html
+Handmade wood furniture in Lalitpur, Bagmati Province, Nepal.
 
-How to use:
-1. Open your template folder on your computer.
-2. Copy these 5 files into it and choose "Replace".
-   Keep the template's css, js and images folders as they are.
-3. Open index.html to preview, then upload everything to GitHub.
+PAGES
+  index.html       Home
+  about.html       About
+  shop.html        Products
+  furniture.html   Furniture
+  contact.html     Contact + embedded map
 
-Still to do:
-- Replace the template's sample photos in the images folder with your own
-  (keep the same file names, or update the names in the HTML).
-- Replace images/logo.png with your logo if you have one.
-- Add Facebook/Instagram links in the footer when you have them.
+ASSETS
+  css/     bootstrap.css, style.css (compiled from style.scss), responsive.css
+  js/      jquery-3.4.1.min.js, bootstrap.js
+  images/  photos, icons and logo files
+
+EDITING THE DESIGN
+  Colours and layout live in css/style.scss. After editing it, recompile:
+      npx sass css/style.scss css/style.css
+
+  Brand colours:
+      emerald green   #0b7d54   (primary)
+      gold            #c9a24b   (secondary)
+      deep emerald    #0e231b   (dark header / footer)
+
+LOGO
+  logo-symbol.svg / .png         the dovetail "J" mark (emerald + gold)
+  logo-symbol-light.svg / .png   the mark for dark backgrounds
+  logo-horizontal.svg / .png     mark + wordmark (navbar, email)
+  logo-stacked.svg / .png        stacked badge (signage, engraving)
+  The navbar and footer use logo-symbol-light.svg.
+
+DEPLOYMENT
+  Pushing to the main branch runs .github/workflows/static.yml, which
+  publishes the site to GitHub Pages.

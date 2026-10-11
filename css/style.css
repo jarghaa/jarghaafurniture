@@ -75,10 +75,6 @@ body {
   background-size: auto;
 }
 
-.hero_area.sub_pages {
-  height: auto;
-}
-
 .header_section {
   overflow-x: hidden;
   background-color: rgba(14, 35, 27, 0.92);
@@ -132,17 +128,6 @@ a:focus {
   box-shadow: none;
 }
 
-.custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
-  background-size: 17px;
-  background-repeat: no-repeat;
-  background-position-y: 7px;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-}
-
 .custom_nav-container form {
   padding-top: 7px;
 }
@@ -180,26 +165,6 @@ a:focus {
   background-size: 50px;
   width: 30px;
   height: 30px;
-}
-
-.lg_toggl-btn {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  width: 56px;
-  height: 40px;
-  cursor: pointer;
-}
-.lg_toggl-btn:focus {
-  outline: none;
-}
-
-.login_btn-container {
-  padding-top: 30px;
-}
-.login_btn-container a {
-  color: #0b7d54;
-  text-transform: uppercase;
 }
 
 /*end header section*/
@@ -300,60 +265,6 @@ a:focus {
 }
 .slider_section .img-container .img-box img {
   width: 100%;
-}
-.slider_section .play_btn {
-  background-color: #0b7d54;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  width: 75px;
-  height: 75px;
-  position: absolute;
-  z-index: 3;
-  top: 56%;
-  right: 32%;
-}
-.slider_section .play_btn a {
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  width: 75px;
-  height: 75px;
-  position: relative;
-  z-index: 5;
-}
-.slider_section .play_btn img {
-  width: 20px;
-  margin-left: 3px;
-}
-.slider_section .play_btn::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #0b7d54;
-  opacity: 0.3;
-  border-radius: 100%;
-  transform: translate(-50%, -50%);
-}
-.slider_section .play_btn::before {
-  z-index: 2;
-  animation: before-animation 1500ms infinite;
-}
-@keyframes before-animation {
-  0% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 0.3;
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-    opacity: 0;
-  }
 }
 .slider_section .carousel-indicators {
   margin: 0;
@@ -628,54 +539,6 @@ a:focus {
   height: 100%;
 }
 
-.client_section .custom_heading-container {
-  justify-content: center;
-}
-.client_section .client_container {
-  display: flex;
-  align-items: flex-start;
-}
-.client_section .client_box {
-  margin-left: 25px;
-  margin-right: 25px;
-  padding: 25px;
-  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.1);
-}
-.client_section .client_box .client-id {
-  display: flex;
-  align-items: center;
-}
-.client_section .client_box .client-id .img-box img {
-  width: 100%;
-}
-.client_section .client_box .client-id .name {
-  margin-left: 15px;
-}
-.client_section .client_box .client-id .name h5 {
-  font-weight: bold;
-}
-.client_section .client_box .client-id .name p {
-  color: #c9a24b;
-  margin: 0;
-}
-.client_section .client_box .detail {
-  margin-top: 25px;
-}
-.client_section .client_box:hover {
-  background-color: #f1f5f2;
-  box-shadow: none;
-}
-.client_section .client_box:hover .arrow_img {
-  background-image: url(../images/arrow-green.png);
-}
-.client_section .client_box .arrow_img {
-  width: 50px;
-  height: 30px;
-  background-image: url(../images/arrow.png);
-  background-size: 25px;
-  background-repeat: no-repeat;
-}
-
 .info_section {
   background-color: #0e231b;
   color: #ffffff;
@@ -715,17 +578,6 @@ a:focus {
 .info_section .map_container iframe {
   display: block;
 }
-.info_section .info_insta .insta_container > div {
-  display: flex;
-}
-.info_section .info_insta .insta_container img {
-  width: 100%;
-}
-.info_section .info_insta .insta_container .insta-box {
-  margin: 5px;
-  display: flex;
-  align-items: stretch;
-}
 .info_section .info_contact .img-box {
   width: 35px;
   display: flex;
@@ -742,38 +594,6 @@ a:focus {
 .info_section .info_contact > div img {
   height: auto;
   margin-right: 12px;
-}
-.info_section .info_form form input {
-  outline: none;
-  width: 100%;
-  padding: 7px 10px;
-}
-.info_section .info_form form button {
-  display: inline-block;
-  padding: 8px 30px;
-  background-color: #0b7d54;
-  color: #ffffff;
-  transition: all 0.3s;
-  border: 1px solid transparent;
-  border-radius: 0;
-}
-.info_section .info_form form button:hover {
-  background-color: transparent;
-  border-color: #0b7d54;
-  color: #0b7d54;
-}
-.info_section .info_form form button {
-  margin-top: 15px;
-  text-transform: uppercase;
-  font-size: 15px;
-}
-.info_section .info_form .social_box {
-  margin-top: 35px;
-  width: 100%;
-  display: flex;
-}
-.info_section .info_form .social_box a {
-  margin-right: 25px;
 }
 
 /* footer section*/
@@ -798,50 +618,33 @@ a:focus {
 
 /* end footer section*/
 #navbarSupportedContent {
-  transform: translateX(100vw);
-  opacity: 0;
-  transition: all 0.3s ease-in;
   justify-content: space-between;
   align-items: center;
 }
 
-#navbarSupportedContent.lg_nav-toggle {
-  transform: translateX(0);
-  opacity: 1;
+/* Jarghaa: static navigation bar (same on every page) */
+.header_section,
+.hero_area .header_section {
+  position: static;
 }
 
-.custom_menu-btn button {
-  margin-top: 12px;
+@media (min-width: 992px) {
+  #navbarSupportedContent {
+    display: flex !important;
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: auto !important;
+    width: auto !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+}
+.navbar-nav .nav-link:focus:not(:focus-visible),
+.navbar-nav .nav-link:active {
   outline: none;
-  border: none;
-  background-color: transparent;
-}
-
-.custom_menu-btn button span {
-  display: block;
-  width: 34px;
-  height: 3.5px;
-  background-color: #ffffff;
-  margin: 8.5px 0;
-  transition: all 0.3s;
-}
-
-.custom_menu-btn .s-2 {
-  transition: all 0.1s;
-  width: 17px;
-  margin-left: auto;
-}
-
-.menu_btn-style button .s-1 {
-  transform: rotate(45deg) translate(7px, 10px);
-}
-
-.menu_btn-style button .s-2 {
-  transform: translateX(100px);
-}
-
-.menu_btn-style button .s-3 {
-  transform: rotate(-45deg) translate(7px, -10px);
+  background: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
