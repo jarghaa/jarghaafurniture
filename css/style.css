@@ -873,4 +873,123 @@ a:focus {
   background: transparent;
 }
 
+/* ===== Jarghaa refinements ===== */
+/* Brand button: it was only styled inside .brand_section, so the
+   contact-section CTAs fell back to the default blue link colour */
+.brand-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #12251d;
+  color: #ffffff;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+.brand-btn:hover {
+  background-color: transparent;
+  border-color: #12251d;
+  color: #12251d;
+}
+
+/* Theme text links in the contact section (were default link blue) */
+.contact_section a {
+  color: #0b7d54;
+}
+.contact_section a:hover, .contact_section a:focus {
+  color: #12251d;
+}
+
+.contact_section a.brand-btn,
+a.brand-btn:hover,
+a.brand-btn:focus {
+  color: #ffffff;
+}
+
+/* Theme footer / info-section links (were default link blue) */
+.info_section a {
+  color: #c9a24b;
+}
+.info_section a:hover, .info_section a:focus {
+  color: #d8b96f;
+}
+
+/* Hero: replace the washed-out template photo with a clean on-brand gradient */
+.hero_area {
+  background-image: linear-gradient(135deg, #f6faf8 0%, #e9f1ec 55%, #dfeae4 100%);
+  height: 88vh;
+}
+
+/* Slightly tighter vertical rhythm */
+.layout_padding {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* Product cards: give the caption room so it stops crowding the photo */
+.brand_section .brand_container .box .img-box {
+  margin-bottom: 18px;
+}
+.brand_section .brand_container .box .detail-box h6 {
+  margin-bottom: 0;
+}
+
+/* Enquiry form */
+.enquiry_heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 40px 0 5px 0;
+  color: #12251d;
+}
+
+.enquiry_form input,
+.enquiry_form textarea {
+  width: 100%;
+  border: 1px solid rgba(18, 37, 29, 0.22);
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  font-family: inherit;
+  font-size: 15px;
+  color: #12251d;
+  outline: none;
+}
+.enquiry_form input:focus,
+.enquiry_form textarea:focus {
+  border-color: #0b7d54;
+}
+.enquiry_form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+.enquiry_form .form-note {
+  font-size: 13px;
+  color: #5a6b63;
+  margin: 5px 0 0 0;
+}
+
+/* Floating WhatsApp button */
+.whatsapp_float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+  transition: transform 0.2s ease;
+}
+.whatsapp_float:hover {
+  transform: scale(1.08);
+}
+.whatsapp_float svg {
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */
