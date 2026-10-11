@@ -1058,19 +1058,25 @@ a:focus {
 
 /* ----- Consistent emerald + gold buttons (no white / transparent hovers) ----- */
 
-/* Primary CTA button (every page) : emerald -> gold on hover */
+/* Hover keeps each button's own brand colour and simply deepens it
+   (plus a small lift), so two side-by-side buttons - About us and
+   Contact us - can never end up looking identical. */
+
+/* Primary CTA button (every page) - emerald -> deeper emerald */
 .brand-btn {
   @include hero_btn($primary1, $white, 10px, 30px, 30px);
 
   &:hover,
   &:focus {
-    background-color: $secondary1;
-    border-color: $secondary1;
-    color: $black;
+    background-color: #096b48;
+    border-color: #096b48;
+    color: $white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(11, 125, 84, 0.3);
   }
 }
 
-/* Primary in-page CTAs : emerald -> gold */
+/* Primary in-page CTAs - emerald -> deeper emerald */
 .brand_section .brand-btn,
 .about_section .detail-box a,
 .discount_section .detail-box a,
@@ -1082,13 +1088,15 @@ a:focus {
 
   &:hover,
   &:focus {
-    background-color: $secondary1;
-    border-color: $secondary1;
-    color: $black;
+    background-color: #096b48;
+    border-color: #096b48;
+    color: $white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(11, 125, 84, 0.3);
   }
 }
 
-/* Secondary in-page CTA : gold -> emerald */
+/* Secondary in-page CTA - gold -> deeper gold */
 .slider_section .detail-box .btn-box .btn-2 {
   background-color: $secondary1;
   border: 1px solid $secondary1;
@@ -1096,9 +1104,11 @@ a:focus {
 
   &:hover,
   &:focus {
-    background-color: $primary1;
-    border-color: $primary1;
-    color: $white;
+    background-color: #ab8433;
+    border-color: #ab8433;
+    color: $black;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(201, 162, 75, 0.35);
   }
 }
 

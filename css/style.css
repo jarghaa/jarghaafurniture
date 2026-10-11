@@ -877,7 +877,10 @@ a:focus {
 
 /* ===== Jarghaa refinements ===== */
 /* ----- Consistent emerald + gold buttons (no white / transparent hovers) ----- */
-/* Primary CTA button (every page) : emerald -> gold on hover */
+/* Hover keeps each button's own brand colour and simply deepens it
+   (plus a small lift), so two side-by-side buttons - About us and
+   Contact us - can never end up looking identical. */
+/* Primary CTA button (every page) - emerald -> deeper emerald */
 .brand-btn {
   display: inline-block;
   padding: 10px 30px;
@@ -893,12 +896,14 @@ a:focus {
   color: #0b7d54;
 }
 .brand-btn:hover, .brand-btn:focus {
-  background-color: #c9a24b;
-  border-color: #c9a24b;
-  color: #12251d;
+  background-color: #096b48;
+  border-color: #096b48;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(11, 125, 84, 0.3);
 }
 
-/* Primary in-page CTAs : emerald -> gold */
+/* Primary in-page CTAs - emerald -> deeper emerald */
 .brand_section .brand-btn,
 .about_section .detail-box a,
 .discount_section .detail-box a,
@@ -917,21 +922,25 @@ a:focus {
 .slider_section .detail-box .btn-box .btn-1:focus,
 .contact_section button:hover,
 .contact_section button:focus {
-  background-color: #c9a24b;
-  border-color: #c9a24b;
-  color: #12251d;
+  background-color: #096b48;
+  border-color: #096b48;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(11, 125, 84, 0.3);
 }
 
-/* Secondary in-page CTA : gold -> emerald */
+/* Secondary in-page CTA - gold -> deeper gold */
 .slider_section .detail-box .btn-box .btn-2 {
   background-color: #c9a24b;
   border: 1px solid #c9a24b;
   color: #12251d;
 }
 .slider_section .detail-box .btn-box .btn-2:hover, .slider_section .detail-box .btn-box .btn-2:focus {
-  background-color: #0b7d54;
-  border-color: #0b7d54;
-  color: #ffffff;
+  background-color: #ab8433;
+  border-color: #ab8433;
+  color: #12251d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(201, 162, 75, 0.35);
 }
 
 /* Text links inside the contact section (were default link blue) */
