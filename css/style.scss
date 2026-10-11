@@ -840,6 +840,23 @@ a:focus {
     margin-bottom: 25px;
     font-size: 24px;
   }
+  .map_container {
+    margin-top: 5px;
+    height: 190px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    .map-responsive {
+      height: 100%;
+    }
+
+    iframe {
+      display: block;
+    }
+  }
+
+
 
   .info_insta {
 

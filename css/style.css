@@ -687,6 +687,19 @@ a:focus {
   margin-bottom: 25px;
   font-size: 24px;
 }
+.info_section .map_container {
+  margin-top: 5px;
+  height: 190px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.info_section .map_container .map-responsive {
+  height: 100%;
+}
+.info_section .map_container iframe {
+  display: block;
+}
 .info_section .info_insta .insta_container > div {
   display: flex;
 }
