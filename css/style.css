@@ -513,7 +513,7 @@ a:focus {
 .brand_section .brand_container .box {
   position: relative;
   text-align: center;
-  background-color: #f7faf8;
+  background-color: #eef5f1;
   padding: 75px 35px 10px 35px;
   margin: 30px 10px 0 10px;
   min-width: 225px;
@@ -1054,6 +1054,76 @@ a:focus {
   background-size: 100% 100%;
   background-position: center;
   border-top-left-radius: 58% 40%;
+}
+
+/* ===== Content: lead paragraphs & FAQ ===== */
+.section_lead {
+  margin-top: 16px;
+  color: #4a5a53;
+  font-size: 15.5px;
+  line-height: 1.75;
+  max-width: 620px;
+}
+
+.discount_section .detail-box .section_lead {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq_section .faq_item {
+  border-bottom: 1px solid rgba(18, 37, 29, 0.12);
+  padding: 20px 0;
+}
+.faq_section .faq_item:first-of-type {
+  border-top: 1px solid rgba(18, 37, 29, 0.12);
+}
+.faq_section .faq_item h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #12251d;
+  margin-bottom: 8px;
+}
+.faq_section .faq_item p {
+  margin: 0;
+  color: #4a5a53;
+  line-height: 1.7;
+}
+
+/* "How we work" steps */
+.steps_section {
+  background-color: #f2f7f4;
+}
+.steps_section .step {
+  margin-top: 30px;
+}
+.steps_section .step h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #c9a24b;
+  margin-bottom: 6px;
+}
+.steps_section .step h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #12251d;
+  margin-bottom: 8px;
+}
+.steps_section .step p {
+  color: #4a5a53;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Product card description */
+.brand_section .brand_container .box .card_desc {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #5a6b63;
+  margin: 10px 6px 0 6px;
 }
 
 /*# sourceMappingURL=style.css.map */
