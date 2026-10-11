@@ -1056,13 +1056,53 @@ a:focus {
 
 /* ===== Jarghaa refinements ===== */
 
-/* Brand button: it was only styled inside .brand_section, so the
-   contact-section CTAs fell back to the default blue link colour */
+/* ----- Consistent emerald + gold buttons (no white / transparent hovers) ----- */
+
+/* Primary CTA button (every page) : emerald -> gold on hover */
 .brand-btn {
-  @include hero_btn($black, $white, 10px, 30px, 30px);
+  @include hero_btn($primary1, $white, 10px, 30px, 30px);
+
+  &:hover,
+  &:focus {
+    background-color: $secondary1;
+    border-color: $secondary1;
+    color: $black;
+  }
 }
 
-/* Theme text links in the contact section (were default link blue) */
+/* Primary in-page CTAs : emerald -> gold */
+.brand_section .brand-btn,
+.about_section .detail-box a,
+.discount_section .detail-box a,
+.slider_section .detail-box .btn-box .btn-1,
+.contact_section button {
+  background-color: $primary1;
+  border: 1px solid $primary1;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary1;
+    border-color: $secondary1;
+    color: $black;
+  }
+}
+
+/* Secondary in-page CTA : gold -> emerald */
+.slider_section .detail-box .btn-box .btn-2 {
+  background-color: $secondary1;
+  border: 1px solid $secondary1;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    background-color: $primary1;
+    border-color: $primary1;
+    color: $white;
+  }
+}
+
+/* Text links inside the contact section (were default link blue) */
 .contact_section a {
   color: $primary1;
 
@@ -1073,9 +1113,12 @@ a:focus {
 }
 
 .contact_section a.brand-btn,
-a.brand-btn:hover,
-a.brand-btn:focus {
+.contact_section a.brand-btn:focus {
   color: $white;
+}
+
+.contact_section a.brand-btn:hover {
+  color: $black;
 }
 
 /* Theme footer / info-section links (were default link blue) */
