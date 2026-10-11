@@ -34,7 +34,7 @@ body {
   display: flex;
 }
 .heading_container h2 {
-  color: #1c1c1c;
+  color: #12251d;
   position: relative;
   font-family: "Poppins", sans-serif;
 }
@@ -45,7 +45,7 @@ body {
   position: absolute;
   top: 50%;
   right: -5px;
-  background-color: #d4b88a;
+  background-color: #0b7d54;
   transform: translate(100%, -50%);
 }
 
@@ -67,7 +67,7 @@ body {
   height: 100%;
   background-image: url(../images/hero-side-bg.png);
   background-size: cover;
-  background-color: rgba(28, 28, 28, 0.85);
+  background-color: rgba(14, 35, 27, 0.85);
 }
 
 .sub_page .hero_area {
@@ -81,7 +81,7 @@ body {
 
 .header_section {
   overflow-x: hidden;
-  background-color: rgba(28, 28, 28, 0.92);
+  background-color: rgba(14, 35, 27, 0.92);
 }
 .header_section .container-fluid {
   padding-right: 25px;
@@ -112,7 +112,7 @@ body {
   text-transform: uppercase;
 }
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link, .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover .nav-link {
-  color: #d4b88a;
+  color: #c9a24b;
 }
 
 a,
@@ -188,7 +188,7 @@ a:focus {
   padding-top: 30px;
 }
 .login_btn-container a {
-  color: #d4b88a;
+  color: #0b7d54;
   text-transform: uppercase;
 }
 
@@ -230,12 +230,12 @@ a:focus {
   align-items: center;
 }
 .slider_section .detail-box h1 {
-  color: #d4b88a;
+  color: #0b7d54;
   text-transform: uppercase;
 }
 .slider_section .detail-box h1 span {
   font-size: 5rem;
-  color: #1c1c1c;
+  color: #12251d;
 }
 .slider_section .detail-box p {
   margin-top: 15px;
@@ -252,7 +252,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn-1 {
   display: inline-block;
   padding: 6px 0;
-  background-color: #d4b88a;
+  background-color: #0b7d54;
   color: #ffffff;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -260,8 +260,8 @@ a:focus {
 }
 .slider_section .detail-box .btn-box .btn-1:hover {
   background-color: transparent;
-  border-color: #d4b88a;
-  color: #d4b88a;
+  border-color: #0b7d54;
+  color: #0b7d54;
 }
 .slider_section .detail-box .btn-box .btn-1 {
   margin-right: 5px;
@@ -269,7 +269,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn-2 {
   display: inline-block;
   padding: 6px 0;
-  background-color: #1c1c1c;
+  background-color: #12251d;
   color: #ffffff;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -277,8 +277,8 @@ a:focus {
 }
 .slider_section .detail-box .btn-box .btn-2:hover {
   background-color: transparent;
-  border-color: #1c1c1c;
-  color: #1c1c1c;
+  border-color: #12251d;
+  color: #12251d;
 }
 .slider_section .img-container {
   position: relative;
@@ -292,7 +292,7 @@ a:focus {
   width: 100%;
 }
 .slider_section .play_btn {
-  background-color: #d4b88a;
+  background-color: #0b7d54;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,7 +326,7 @@ a:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #d4b88a;
+  background-color: #0b7d54;
   opacity: 0.3;
   border-radius: 100%;
   transform: translate(-50%, -50%);
@@ -355,13 +355,13 @@ a:focus {
   width: 15px;
   height: 15px;
   border-radius: 100%;
-  background-color: #d4b88a;
+  background-color: #0b7d54;
   opacity: 1;
   border: none;
   background-clip: unset;
 }
 .slider_section .carousel-indicators li.active {
-  background-color: #1c1c1c;
+  background-color: #12251d;
 }
 .slider_section ol.carousel-indicators.indicator-2 {
   position: unset;
@@ -392,7 +392,7 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 7px 25px;
-  background-color: #1c1c1c;
+  background-color: #12251d;
   color: #ffffff;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -400,8 +400,8 @@ a:focus {
 }
 .about_section .detail-box a:hover {
   background-color: transparent;
-  border-color: #1c1c1c;
-  color: #1c1c1c;
+  border-color: #12251d;
+  color: #12251d;
 }
 .about_section .detail-box a {
   margin-top: 35px;
@@ -411,11 +411,11 @@ a:focus {
 }
 
 .trending_section {
-  background-color: #f5f2ed;
+  background-color: #f2f7f4;
 }
 .trending_section .tab_container .t-link-box {
   margin: 65px 0;
-  color: #d4b88a;
+  color: #0b7d54;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -424,20 +424,20 @@ a:focus {
   margin: 0;
 }
 .trending_section .tab_container .t-link-box hr {
-  background-color: #d4b88a;
+  background-color: #0b7d54;
   width: 60px;
   height: 1.5px;
   border: none;
   margin: 0 65px 0 5px;
 }
 .trending_section .tab_container .t-link-box .t-name {
-  color: #1c1c1c;
+  color: #12251d;
 }
 .trending_section .tab_container .t-link-box:hover {
   cursor: pointer;
 }
 .trending_section .tab_container .t-link-box[aria-expanded=true] .t-name {
-  color: #d4b88a;
+  color: #0b7d54;
 }
 .trending_section .img_container {
   display: flex;
@@ -470,13 +470,13 @@ a:focus {
 .discount_section .detail-box h2.main_heading {
   font-size: 3rem;
   padding: 0;
-  color: #d4b88a;
+  color: #0b7d54;
   text-transform: uppercase;
 }
 .discount_section .detail-box a {
   display: inline-block;
   padding: 6px 30px;
-  background-color: #1c1c1c;
+  background-color: #12251d;
   color: #ffffff;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -484,8 +484,8 @@ a:focus {
 }
 .discount_section .detail-box a:hover {
   background-color: transparent;
-  border-color: #1c1c1c;
-  color: #1c1c1c;
+  border-color: #12251d;
+  color: #12251d;
 }
 .discount_section .detail-box a {
   margin-top: 25px;
@@ -503,24 +503,24 @@ a:focus {
 .brand_section .brand_container .box {
   position: relative;
   text-align: center;
-  background-color: #faf7f2;
+  background-color: #f7faf8;
   padding: 75px 35px 10px 35px;
   margin: 30px 10px 0 10px;
   min-width: 225px;
   flex: 0 0 23.2467%;
 }
 .brand_section .brand_container .box h6 {
-  color: #1c1c1c;
+  color: #12251d;
 }
 .brand_section .brand_container .box h6.price {
-  color: #d4b88a;
+  color: #c9a24b;
 }
 .brand_section .brand_container .box .new {
   position: absolute;
   top: 0;
   left: 0;
   padding: 5px 35px;
-  background-color: #1c1c1c;
+  background-color: #0b7d54;
   color: #ffffff;
 }
 .brand_section .brand_container .box .new h6 {
@@ -530,15 +530,15 @@ a:focus {
   width: 100%;
 }
 .brand_section .brand_container .box:hover {
-  background-color: #d4b88a;
+  background-color: #0b7d54;
 }
 .brand_section .brand_container .box:hover h6.price {
-  color: #1c1c1c;
+  color: #12251d;
 }
 .brand_section .brand-btn {
   display: inline-block;
   padding: 6px 30px;
-  background-color: #1c1c1c;
+  background-color: #12251d;
   color: #ffffff;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -546,8 +546,8 @@ a:focus {
 }
 .brand_section .brand-btn:hover {
   background-color: transparent;
-  border-color: #1c1c1c;
-  color: #1c1c1c;
+  border-color: #12251d;
+  color: #12251d;
 }
 .brand_section .brand-btn {
   margin-top: 15px;
@@ -594,7 +594,7 @@ a:focus {
 .contact_section button {
   display: inline-block;
   padding: 12px 45px;
-  background-color: #d4b88a;
+  background-color: #0b7d54;
   color: #ffffff;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -602,8 +602,8 @@ a:focus {
 }
 .contact_section button:hover {
   background-color: transparent;
-  border-color: #d4b88a;
-  color: #d4b88a;
+  border-color: #0b7d54;
+  color: #0b7d54;
 }
 .contact_section button {
   border-radius: 30px;
@@ -645,14 +645,14 @@ a:focus {
   font-weight: bold;
 }
 .client_section .client_box .client-id .name p {
-  color: #d4b88a;
+  color: #c9a24b;
   margin: 0;
 }
 .client_section .client_box .detail {
   margin-top: 25px;
 }
 .client_section .client_box:hover {
-  background-color: #f3f3f3;
+  background-color: #f1f5f2;
   box-shadow: none;
 }
 .client_section .client_box:hover .arrow_img {
@@ -667,7 +667,7 @@ a:focus {
 }
 
 .info_section {
-  background-color: #1c1c1c;
+  background-color: #0e231b;
   color: #ffffff;
 }
 .info_section .info_logo {
@@ -723,7 +723,7 @@ a:focus {
 .info_section .info_form form button {
   display: inline-block;
   padding: 8px 30px;
-  background-color: #d4b88a;
+  background-color: #0b7d54;
   color: #ffffff;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -731,8 +731,8 @@ a:focus {
 }
 .info_section .info_form form button:hover {
   background-color: transparent;
-  border-color: #d4b88a;
-  color: #d4b88a;
+  border-color: #0b7d54;
+  color: #0b7d54;
 }
 .info_section .info_form form button {
   margin-top: 15px;
@@ -753,11 +753,11 @@ a:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #1c1c1c;
+  background-color: #0e231b;
 }
 
 .footer_section p {
-  color: #e8e4dc;
+  color: #e4ede8;
   margin: 0;
   padding: 25px 0 20px 0;
   margin: 0 auto;
@@ -765,7 +765,7 @@ a:focus {
 }
 
 .footer_section a {
-  color: #d4b88a;
+  color: #c9a24b;
 }
 
 /* end footer section*/

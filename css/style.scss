@@ -1,6 +1,8 @@
 $white: #ffffff;
-$black: #1c1c1c;
-$primary1: #d4b88a;
+$black: #12251d;
+$primary1: #0b7d54;
+$secondary1: #c9a24b;
+$dark: #0e231b;
 
 
 @mixin main-font {
@@ -108,7 +110,7 @@ body {
     height: 100%;
     background-image: url(../images/hero-side-bg.png);
     background-size: cover;
-    background-color: rgba(28, 28, 28, 0.85);
+    background-color: rgba(14, 35, 27, 0.85);
   }
 }
 
@@ -127,7 +129,7 @@ body {
 
 .header_section {
   overflow-x: hidden;
-  background-color: rgba(28, 28, 28, 0.92);
+  background-color: rgba(14, 35, 27, 0.92);
 
   .container-fluid {
     padding-right: 25px;
@@ -169,7 +171,7 @@ body {
       &.active,
       &:hover {
         .nav-link {
-          color: $primary1;
+          color: $secondary1;
         }
       }
     }
@@ -507,7 +509,7 @@ a:focus {
 // trending section
 
 .trending_section {
-  background-color: #f5f2ed;
+  background-color: #f2f7f4;
 
   .tab_container {
     .t-link-box {
@@ -624,7 +626,7 @@ a:focus {
     .box {
       position: relative;
       text-align: center;
-      background-color: #faf7f2;
+      background-color: #f7faf8;
       padding: 75px 35px 10px 35px;
       margin: 30px 10px 0 10px;
       min-width: 225px;
@@ -635,7 +637,7 @@ a:focus {
       }
 
       h6.price {
-        color: $primary1;
+        color: $secondary1;
       }
 
       .new {
@@ -643,7 +645,7 @@ a:focus {
         top: 0;
         left: 0;
         padding: 5px 35px;
-        background-color: $black;
+        background-color: $primary1;
         color: $white;
 
         h6 {
@@ -779,7 +781,7 @@ a:focus {
         }
 
         p {
-          color: $primary1;
+          color: $secondary1;
           margin: 0;
         }
       }
@@ -790,7 +792,7 @@ a:focus {
     }
 
     &:hover {
-      background-color: #f3f3f3;
+      background-color: #f1f5f2;
       box-shadow: none;
 
       .arrow_img {
@@ -817,7 +819,7 @@ a:focus {
 
 // info section
 .info_section {
-  background-color: #1c1c1c;
+  background-color: $dark;
   color: $white;
 
   .info_logo {
@@ -925,11 +927,11 @@ a:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #1c1c1c;
+  background-color: $dark;
 }
 
 .footer_section p {
-  color: #e8e4dc;
+  color: #e4ede8;
   margin: 0;
   padding: 25px 0 20px 0;
   margin: 0 auto;
@@ -938,7 +940,7 @@ a:focus {
 }
 
 .footer_section a {
-  color: $primary1;
+  color: $secondary1;
 }
 
 /* end footer section*/
