@@ -1,6 +1,6 @@
 $white: #ffffff;
-$black: #1a2340;
-$primary1: #c9a84c;
+$black: #1c1c1c;
+$primary1: #d4b88a;
 
 
 @mixin main-font {
@@ -36,7 +36,7 @@ $primary1: #c9a84c;
 
 body {
   @include main-font();
-  color: #0c0c0c;
+  color: #2d2d2d;
   background-color: #ffffff;
 }
 
@@ -108,7 +108,7 @@ body {
     height: 100%;
     background-image: url(../images/hero-side-bg.png);
     background-size: cover;
-    background-color: rgba(26, 35, 64, 0.9);
+    background-color: rgba(28, 28, 28, 0.85);
   }
 }
 
@@ -127,7 +127,7 @@ body {
 
 .header_section {
   overflow-x: hidden;
-  background-color: rgba(26, 35, 64, 0.95);
+  background-color: rgba(28, 28, 28, 0.92);
 
   .container-fluid {
     padding-right: 25px;
@@ -507,7 +507,7 @@ a:focus {
 // trending section
 
 .trending_section {
-  background-color: #f0f0f5;
+  background-color: #f5f2ed;
 
   .tab_container {
     .t-link-box {
@@ -624,7 +624,7 @@ a:focus {
     .box {
       position: relative;
       text-align: center;
-      background-color: #e8e6dd;
+      background-color: #faf7f2;
       padding: 75px 35px 10px 35px;
       margin: 30px 10px 0 10px;
       min-width: 225px;
@@ -817,7 +817,7 @@ a:focus {
 
 // info section
 .info_section {
-  background-color: #0f1521;
+  background-color: #1c1c1c;
   color: $white;
 
   .info_logo {
@@ -925,11 +925,11 @@ a:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #faf9f5;
+  background-color: #1c1c1c;
 }
 
 .footer_section p {
-  color: $black;
+  color: #e8e4dc;
   margin: 0;
   padding: 25px 0 20px 0;
   margin: 0 auto;
@@ -938,7 +938,7 @@ a:focus {
 }
 
 .footer_section a {
-  color: $black;
+  color: $primary1;
 }
 
 /* end footer section*/
