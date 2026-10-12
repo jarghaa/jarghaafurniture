@@ -92,7 +92,8 @@
     padding-top: 35px;
   }
 
-  .slider_section .detail-box h1 span {
+  .slider_section .detail-box h1 span,
+  .slider_section .detail-box h2 span {
     font-size: 4rem;
   }
 
@@ -182,11 +183,13 @@
 }
 
 @media (max-width: 576px) {
-  .slider_section .detail-box h1 {
+  .slider_section .detail-box h1,
+  .slider_section .detail-box h2 {
     font-size: 2.5rem;
   }
 
-  .slider_section .detail-box h1 span {
+  .slider_section .detail-box h1 span,
+  .slider_section .detail-box h2 span {
     font-size: 3.5rem;
   }
 
@@ -206,11 +209,13 @@
 @media (max-width: 480px) {}
 
 @media (max-width: 420px) {
-  .slider_section .detail-box h1 {
+  .slider_section .detail-box h1,
+  .slider_section .detail-box h2 {
     font-size: 2rem;
   }
 
-  .slider_section .detail-box h1 span {
+  .slider_section .detail-box h1 span,
+  .slider_section .detail-box h2 span {
     font-size: 3rem;
   }
 }

@@ -239,11 +239,14 @@ a:focus {
 .slider_section .row {
   align-items: center;
 }
-.slider_section .detail-box h1 {
+.slider_section .detail-box h1,
+.slider_section .detail-box h2 {
+  font-size: 2.5rem;
   color: #0b7d54;
   text-transform: uppercase;
 }
-.slider_section .detail-box h1 span {
+.slider_section .detail-box h1 span,
+.slider_section .detail-box h2 span {
   font-size: 5rem;
   color: #12251d;
 }
@@ -1317,7 +1320,8 @@ a:focus {
   padding: 26px 24px 28px;
   box-shadow: 0 10px 22px rgba(18, 37, 29, 0.06);
 }
-.showroom_panel h2 {
+.showroom_panel h2,
+.showroom_panel h3 {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
