@@ -1126,4 +1126,22 @@ a:focus {
   margin: 10px 6px 0 6px;
 }
 
+
+/* Product photography: one consistent tile shape so the cards and the
+   What We Make panels line up whatever the source photo's aspect ratio is. */
+.brand_section .brand_container .box .img-box,
+.trending_section .img_container .box .img-box,
+.slider_section .img-container .img-box {
+  aspect-ratio: 7 / 6;
+  overflow: hidden;
+}
+.brand_section .brand_container .box .img-box img,
+.trending_section .img_container .box .img-box img,
+.slider_section .img-container .img-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=style.css.map */
