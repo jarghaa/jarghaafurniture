@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarghaa Furniture &mdash; retouched product photos</title>
+<style>
+  :root {
+    --emerald: #0b7d54;
+    --emerald-deep: #12251d;
+    --gold: #c9a24b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Open Sans", system-ui, sans-serif;
+    background: #f6f7f5;
+    color: #2d2d2d;
+  }
+  header {
+    background: var(--emerald-deep);
+    color: #fff;
+    padding: 38px 24px 32px;
+    border-bottom: 3px solid var(--gold);
+  }
+  header h1 { margin: 0 0 8px; font-size: 26px; letter-spacing: .2px; }
+  header p { margin: 0; opacity: .82; font-size: 15px; max-width: 70ch; line-height: 1.55; }
+  main { max-width: 1180px; margin: 0 auto; padding: 34px 24px 70px; }
+  .item { background: #fff; border: 1px solid rgba(18,37,29,.10); border-radius: 10px;
+          overflow: hidden; margin-bottom: 34px; box-shadow: 0 2px 10px rgba(18,37,29,.05); }
+  .item h2 { margin: 0; font-size: 17px; padding: 16px 20px 14px;
+             border-bottom: 1px solid rgba(18,37,29,.08); color: var(--emerald-deep); }
+  .item h2 span { display: block; font-weight: 400; font-size: 13px; color: #6c757d; margin-top: 4px; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(18,37,29,.08); }
+  figure { margin: 0; background: #fff; }
+  figure img { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 12px; letter-spacing: .09em; text-transform: uppercase;
+               padding: 10px 14px; color: #6c757d; }
+  .after figcaption { color: var(--emerald); font-weight: 600; }
+  .notes { padding: 14px 20px 18px; font-size: 14px; line-height: 1.6; color: #495057;
+           border-top: 1px solid rgba(18,37,29,.08); }
+  .notes b { color: var(--emerald-deep); }
+  footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 60px; font-size: 13px; color: #6c757d; line-height: 1.7; }
+  @media (max-width: 700px) { .pair { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Retouched product photos</h1>
+  <p>Each pair shows the original upload on the left and the retouched version on the right.
+     The finished files are in <code>images/products/</code> at 1400&times;1200 (7:6), matching the
+     shape of the existing product tiles.</p>
+</header>
+<main>
+  <div id="items"></div>
+</main>
+<footer>
+  <p><b>What was changed on every photo:</b> EXIF orientation corrected; keystone (leaning)
+     distortion removed with a projective warp so the carcass reads as a true rectangle;
+     exposure, white balance, contrast and timber colour graded; local contrast lifted so
+     panel detail reads in dark cabinets; edges settled with a soft vignette; then the frame
+     is extended with a deep-emerald (<code>#12251d</code>) soft surround and a hairline gold
+     (<code>#c9a24b</code>) rule, so the set sits together against the site theme.</p>
+  <p><b>Please note:</b> the third photo was supplied at only 768&times;1024, so it has been
+     upscaled and is softer than the others &mdash; it is worth re-shooting at full resolution.</p>
+</footer>
+<script>
+const ITEMS = [
+  { id: 'wardrobe-espresso', src: '../uploads/original-1.jpg',
+    title: 'Four-door espresso wardrobe with top cabinets',
+    note: 'Straightened to a true elevation, the walls cleaned up to neutral white, and the dark finish opened up so the recessed panels and cornice read clearly.' },
+  { id: 'wardrobe-teak-workshop', src: '../uploads/original-2.jpg',
+    title: 'Solid teak four-door wardrobe, fresh from the workshop',
+    note: 'The strongest perspective error of the set: the carcass leaned and the far side was compressed. Corrected, warmed, and the busy workshop background settled with a vignette.' },
+  { id: 'wardrobe-laminate-sliding', src: '../uploads/original-3.jpg',
+    title: 'Laminate sliding-door wardrobe with matching dresser',
+    note: 'Only 768&times;1024 supplied. Leaning corrected, flat lighting lifted and contrast restored, but the source resolution limits how crisp this one can be.' },
+  { id: 'wardrobe-walnut-mirror', src: '../uploads/original-4.jpg',
+    title: 'Walnut wall wardrobe with mirror and dresser unit',
+    note: 'Shot from below with a strong upward keystone. Levelled and squared, warm walnut tones brought back, ceiling and walls neutralised.' }
+];
+
+document.getElementById('items').innerHTML = ITEMS.map(function (it) {
+  return '<section class="item">' +
+    '<h2>' + it.title + '<span>images/products/' + it.id + '.jpg &middot; .webp</span></h2>' +
+    '<div class="pair">' +
+      '<figure><img loading="lazy" src="' + it.src + '" alt="Original upload"><figcaption>Before</figcaption></figure>' +
+      '<figure class="after"><img loading="lazy" src="../images/products/' + it.id + '.jpg" alt="Retouched"><figcaption>After</figcaption></figure>' +
+    '</div>' +
+    '<div class="notes">' + it.note + '</div>' +
+  '</section>';
+}).join('');
+</script>
+</body>
+</html>
