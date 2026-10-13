@@ -26,7 +26,7 @@ const PHOTOS = [
     src: 'uploads/original-1.jpg',
     quad: [[1084, 447], [3152, 447], [3097, 2512], [1161, 2545]],
     piece: [2002, 2082],
-    margins: { l: 0.05, r: 0.05, t: 0.022, b: 0.022 },
+    margins: { l: 0, r: 0, t: 0, b: 0 },
     vignette: { r: 0.80, edge: '#a6a6a6' },
     grade: {
       wb: [1.0, 1.0, 1.02],
@@ -40,9 +40,9 @@ const PHOTOS = [
     id: 'wardrobe-teak-workshop',
     title: 'Solid teak four-door wardrobe, fresh from the workshop',
     src: 'uploads/original-2.jpg',
-    quad: [[350, 362], [2617, 884], [2701, 3223], [463, 3281]],
+    quad: [[392, 792], [2596, 1074], [2704, 3238], [470, 3272]],
     piece: [2284, 2631],
-    margins: { l: 0.02, r: 0.02, t: 0.012, b: 0.012 },
+    margins: { l: 0, r: 0, t: 0, b: 0 },
     vignette: { r: 0.70, edge: '#6d6d6d' },
     grade: {
       wb: [1.02, 1.0, 0.95],
@@ -58,7 +58,7 @@ const PHOTOS = [
     src: 'uploads/original-3.jpg',
     quad: [[40, 272], [668, 262], [670, 780], [52, 800]],
     piece: [625, 525],
-    margins: { l: 0.03, r: 0.03, t: 0.02, b: 0.02 },
+    margins: { l: 0, r: 0, t: 0, b: 0 },
     vignette: { r: 0.85, edge: '#9c9c9c' },
     grade: {
       median: 3,
@@ -74,7 +74,7 @@ const PHOTOS = [
     src: 'uploads/original-4.jpg',
     quad: [[58, 958], [2229, 499], [2282, 3164], [247, 3338]],
     piece: [2131, 2527],
-    margins: { l: 0.02, r: 0.02, t: 0.015, b: 0.015 },
+    margins: { l: 0, r: 0, t: 0, b: 0 },
     vignette: { r: 0.80, edge: '#9a9a9a' },
     grade: {
       wb: [1.03, 1.0, 0.94],
