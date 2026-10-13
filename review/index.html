@@ -99,13 +99,13 @@ document.getElementById('items').innerHTML = ITEMS.map(function (it) {
     '<h2>' + it.title + '<span>images/products/' + it.id + '.jpg &middot; .webp</span></h2>' +
     '<div class="pair">' +
       '<figure><img loading="lazy" src="' + it.src + '" alt="Original upload"><figcaption>Before</figcaption></figure>' +
-      '<figure class="after"><img loading="lazy" src="../images/products/' + it.id + '.jpg" alt="Retouched"><figcaption>After</figcaption></figure>' +
+      '<figure class="after"><img loading="lazy" src="../images/products/' + it.id + '.jpg?v=2" alt="Retouched"><figcaption>After</figcaption></figure>' +
     '</div>' +
     '<div class="notes">' + it.note + '</div>' +
     '<div class="views">' +
-      '<figure><img loading="lazy" src="../images/products/' + it.id + '-square.jpg" alt="Square view"><figcaption>Square &middot; 1200&times;1200</figcaption></figure>' +
-      '<figure><img loading="lazy" src="../images/products/' + it.id + '-wide.jpg" alt="Wide banner view"><figcaption>Banner &middot; 1600&times;900</figcaption></figure>' +
-      '<figure><img loading="lazy" src="../images/products/' + it.id + '-detail.jpg" alt="Closer detail view"><figcaption>Detail &middot; 1200&times;1200</figcaption></figure>' +
+      '<figure><img loading="lazy" src="../images/products/' + it.id + '-square.jpg?v=2" alt="Square view"><figcaption>Square &middot; 1200&times;1200</figcaption></figure>' +
+      '<figure><img loading="lazy" src="../images/products/' + it.id + '-wide.jpg?v=2" alt="Wide banner view"><figcaption>Banner &middot; 1600&times;900</figcaption></figure>' +
+      '<figure><img loading="lazy" src="../images/products/' + it.id + '-detail.jpg?v=2" alt="Closer detail view"><figcaption>Detail &middot; 1200&times;1200</figcaption></figure>' +
     '</div>' +
   '</section>';
 }).join('');
