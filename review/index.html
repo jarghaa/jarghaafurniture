@@ -32,6 +32,7 @@
              border-bottom: 1px solid rgba(18,37,29,.08); color: var(--emerald-deep); }
   .item h2 span { display: block; font-weight: 400; font-size: 13px; color: #6c757d; margin-top: 4px; }
   .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(18,37,29,.08); }
+  .views { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(18,37,29,.08); border-top: 1px solid rgba(18,37,29,.08); }
   figure { margin: 0; background: #fff; }
   figure img { display: block; width: 100%; height: auto; }
   figcaption { font-size: 12px; letter-spacing: .09em; text-transform: uppercase;
@@ -41,48 +42,57 @@
            border-top: 1px solid rgba(18,37,29,.08); }
   .notes b { color: var(--emerald-deep); }
   footer { max-width: 1180px; margin: 0 auto; padding: 0 24px 60px; font-size: 13px; color: #6c757d; line-height: 1.7; }
-  @media (max-width: 700px) { .pair { grid-template-columns: 1fr; } }
+  @media (max-width: 700px) { .pair, .views { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <header>
-  <h1>Retouched product photos</h1>
+  <h1>Studio product photos</h1>
   <p>Each pair shows the original upload on the left and the retouched version on the right.
-     The finished files are in <code>images/products/</code> at 1400&times;1200 (7:6), matching the
-     shape of the existing product tiles.</p>
+     The finished files are in <code>images/products/</code>: a 1400&times;1200 (7:6) product card
+     plus square, wide and closer &ldquo;detail&rdquo; views rendered from the same correction.</p>
 </header>
 <main>
   <div id="items"></div>
 </main>
 <footer>
-  <p><b>What was changed on every photo:</b> EXIF orientation corrected; keystone (leaning)
-     distortion removed with a projective warp so the carcass reads as a true rectangle;
-     exposure, white balance, contrast and timber colour graded; local contrast lifted so
-     panel detail reads in dark cabinets; edges settled with a soft vignette; then the frame
-     is extended with a deep-emerald (<code>#12251d</code>) soft surround and a hairline gold
-     (<code>#c9a24b</code>) rule, so the set sits together against the site theme.</p>
-  <p><b>Two versions of each photo are included.</b> <code>images/products/&lt;name&gt;.jpg</code>
-     (and <code>.webp</code>) is the 1400&times;1200 framed card for the product grid.
-     <code>images/products/&lt;name&gt;-full.jpg</code> is the same correction without the
-     emerald surround, up to 2000&nbsp;px, for banners, galleries or a lightbox.</p>
+  <p><b>What was changed on every photo:</b> EXIF orientation corrected; the tilt from the
+     camera angle removed with a projective warp so the piece reads as a true rectangle;
+     exposure, white balance, contrast and timber colour graded, with local contrast lifted so
+     panel detail reads in dark cabinets and the piece sharpened.</p>
+  <p><b>The background was rebuilt.</b> The room or workshop behind each piece is replaced with a
+     clean, seamless studio sweep &mdash; warm ivory falling to stone, with a soft light behind the
+     piece and a contact shadow on the floor &mdash; so the furniture sits on a consistent,
+     advertisement-ready backdrop instead of a snapshot of the room it was photographed in.</p>
+  <p><b>Several views are rendered from each correction</b> so the page can show the piece
+     straight-on and in closer detail:
+     <code>images/products/&lt;name&gt;.jpg</code> (and <code>.webp</code>) is the 1400&times;1200
+     product card; <code>&lt;name&gt;-square.jpg</code> is 1200&times;1200;
+     <code>&lt;name&gt;-wide.jpg</code> is 1600&times;900 for banners and the slider;
+     <code>&lt;name&gt;-detail.jpg</code> is a closer 1200&times;1200 view of the panels;
+     <code>&lt;name&gt;-700.jpg</code> / <code>.webp</code> is the 700&times;600 hero; and
+     <code>&lt;name&gt;-full.jpg</code> is the full master on the same sweep, up to 2000&nbsp;px.</p>
   <p><b>Please note:</b> the third photo was supplied at only 768&times;1024, so it has been
-     upscaled and is softer than the others &mdash; it is worth re-shooting at full resolution.</p>
+     upscaled and is softer than the others &mdash; it is worth re-shooting at full resolution.
+     The beds and sofas tiles on the product pages still show a placeholder because no source
+     photography for those pieces has been provided yet.</p>
 </footer>
 <script>
 const ITEMS = [
   { id: 'wardrobe-espresso', src: '../uploads/original-1.jpg',
     title: 'Four-door espresso wardrobe with top cabinets',
-    note: 'Straightened to a true elevation, the walls cleaned up to neutral white, and the dark finish opened up so the recessed panels and cornice read clearly.' },
+    note: 'Straightened to a true elevation and cut cleanly out of the room, then set on the studio sweep. The dark finish was opened up so the recessed panels and cornice read clearly.' },
   { id: 'wardrobe-teak-workshop', src: '../uploads/original-2.jpg',
     title: 'Solid teak four-door wardrobe, fresh from the workshop',
-    note: 'The strongest perspective error of the set: the carcass leaned and the far side was compressed. Corrected, warmed, and the busy workshop background settled with a vignette.' },
+    note: 'The strongest camera-angle error of the set: the carcass leaned and the far side was compressed. Squared up, warmed, and the busy workshop &mdash; corrugated roof, ladders and sawdust &mdash; replaced with the studio sweep.' },
   { id: 'wardrobe-laminate-sliding', src: '../uploads/original-3.jpg',
     title: 'Laminate sliding-door wardrobe with matching dresser',
-    note: 'Only 768&times;1024 supplied. Leaning corrected, flat lighting lifted and contrast restored, but the source resolution limits how crisp this one can be.' },
+    note: 'Only 768&times;1024 supplied. The camera angle was levelled, flat lighting lifted and contrast restored, and the bedroom wall and floor behind it swapped for the sweep &mdash; but the source resolution limits how crisp this one can be.' },
   { id: 'wardrobe-walnut-mirror', src: '../uploads/original-4.jpg',
     title: 'Walnut wall wardrobe with mirror and dresser unit',
-    note: 'Shot from below with a strong upward keystone. Levelled and squared, warm walnut tones brought back, ceiling and walls neutralised.' }
+    note: 'Shot from below with a strong upward keystone. Levelled and squared, warm walnut tones brought back, and the ceiling, wall and floor behind it replaced with the studio sweep.' }
 ];
+
 
 document.getElementById('items').innerHTML = ITEMS.map(function (it) {
   return '<section class="item">' +
@@ -92,6 +102,11 @@ document.getElementById('items').innerHTML = ITEMS.map(function (it) {
       '<figure class="after"><img loading="lazy" src="../images/products/' + it.id + '.jpg" alt="Retouched"><figcaption>After</figcaption></figure>' +
     '</div>' +
     '<div class="notes">' + it.note + '</div>' +
+    '<div class="views">' +
+      '<figure><img loading="lazy" src="../images/products/' + it.id + '-square.jpg" alt="Square view"><figcaption>Square &middot; 1200&times;1200</figcaption></figure>' +
+      '<figure><img loading="lazy" src="../images/products/' + it.id + '-wide.jpg" alt="Wide banner view"><figcaption>Banner &middot; 1600&times;900</figcaption></figure>' +
+      '<figure><img loading="lazy" src="../images/products/' + it.id + '-detail.jpg" alt="Closer detail view"><figcaption>Detail &middot; 1200&times;1200</figcaption></figure>' +
+    '</div>' +
   '</section>';
 }).join('');
 </script>
